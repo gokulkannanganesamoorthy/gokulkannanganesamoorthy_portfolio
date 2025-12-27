@@ -127,7 +127,6 @@ const RacingTrail = () => {
         x: e.clientX,
         y: e.clientY
       };
-      lastActiveRef.current = Date.now(); // Track last movement time
     };
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
