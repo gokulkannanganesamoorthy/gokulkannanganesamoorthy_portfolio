@@ -1,0 +1,33 @@
+# robots.txt for https://gokulkannanganesamoorthy.vercel.app/
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Anthropic-Bot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+
+
+# Sitemap location
+Sitemap: https://gokulkannanganesamoorthy.vercel.app/sitemap.xml
