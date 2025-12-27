@@ -135,6 +135,7 @@ const RacingTrail = () => {
   return (
     <canvas
       ref={canvasRef}
+      className="hidden md:block"
       style={{
         position: 'fixed',
         top: 0,

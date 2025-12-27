@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { professionalData } from '../data';
 import MagneticButton from './MagneticButton';
-import DistortionImage from './DistortionImage';
 import SpotlightCard from './SpotlightCard';
 import './CircularGallery.css';
 
@@ -143,14 +142,6 @@ const Work = () => {
                   background: 'linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 40%)',
                   zIndex: 2
                 }} />
-                <DistortionImage 
-                  src={project.imageSrc} 
-                  alt={project.title} 
-                  style={{ 
-                    width: '100%', 
-                    height: '100%', 
-                  }}
-                />
               </div>
 
               <div style={{ marginTop: '2rem', textAlign: 'right', zIndex: 2, position: 'relative', transform: 'translateZ(30px)', padding: '2rem' }}>

@@ -184,7 +184,7 @@ html.lenis, html.lenis body {
 
 /* Apple Style Links */
 .apple-link {
-  color: #0066cc;
+  color: #000000;
   font-size: 1.05rem;
   font-weight: 400;
   display: inline-flex;
@@ -194,6 +194,7 @@ html.lenis, html.lenis body {
 
 .apple-link:hover {
   text-decoration: underline;
+  font-weight: 800;
 }
 
 ::selection {

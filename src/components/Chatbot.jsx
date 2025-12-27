@@ -156,36 +156,10 @@ const Chatbot = () => {
     <>
       {/* Dynamic Thinking Bubble */}
       {!isOpen && (
-        <div style={{
-            position: 'fixed',
-            bottom: '7rem', // Above the button (which is at 2rem + 60px height)
-            right: '2rem',
-            background: 'var(--color-bg)',
-            color: 'var(--color-text)',
-            padding: '0.5rem 1rem',
-            borderRadius: '20px 20px 0 20px', // Speech bubble shape
-            fontFamily: 'var(--font-primary)',
-            fontSize: '0.9rem',
-            fontWeight: 500,
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-            border: '1px solid #000',
-            zIndex: 9998,
-            whiteSpace: 'nowrap',
-            animation: 'float 3s ease-in-out infinite'
-        }}>
+        <div className="chatbot-bubble">
             {thinkingPhrases[thinkingIndex]}
             {/* Little Arrow */}
-            <div style={{
-                position: 'absolute',
-                bottom: '-6px',
-                right: '24px',
-                width: '12px',
-                height: '12px',
-                background: 'var(--color-bg)',
-                borderRight: '1px solid #000',
-                borderBottom: '1px solid #000',
-                transform: 'rotate(45deg)'
-            }} />
+            <div className="chatbot-arrow" />
         </div>
       )}
 
@@ -545,6 +519,48 @@ const Chatbot = () => {
             width: 56px !important;
             height: 56px !important;
           }
+          /* Align bubble with mobile button */
+          .chatbot-bubble {
+            bottom: 5.5rem !important; /* Just above the 56px button at 1rem bottom */
+            right: 1rem !important;
+            font-size: 0.8rem !important;
+          }
+           .chatbot-arrow {
+            right: 16px !important; /* Adjust arrow for smaller bubble/button align */
+          }
+        }
+
+        .chatbot-bubble {
+            position: fixed;
+            bottom: 7rem;
+            right: 2rem;
+            background: var(--color-bg);
+            color: var(--color-text);
+            padding: 0.5rem 1rem;
+            border-radius: 20px 20px 0 20px;
+            font-family: var(--font-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #000;
+            z-index: 9998;
+            white-space: nowrap;
+            animation: float 3s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-arrow {
+            position: absolute;
+            bottom: -6px;
+            right: 24px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-bg);
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            transform: rotate(45deg);
         }
       `}</style>
     </>
