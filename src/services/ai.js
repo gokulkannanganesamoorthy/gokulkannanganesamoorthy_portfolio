@@ -9,13 +9,15 @@ if (API_KEY && API_KEY !== 'YOUR_GEMINI_API_KEY_HERE') {
     genAI = new GoogleGenerativeAI(API_KEY);
 }
 
-// Fallback Chain (Priority: 2.5 Lite -> 2.0 Lite -> 2.0 Flash -> 1.5 Series)
+// Fallback Chain (Priority: 2.5 Flash -> 2.5 Lite -> 1.5 Flash -> Others)
 const MODELS = [
-    "gemini-2.5-flash-lite", // Primary
+    "gemini-3-flash",
+    "gemini-2.5-flash-tts",
+    "gemini-2.5-flash",      // Requested New Model
+    "gemini-2.5-flash-lite", // Efficient
+    "gemini-1.5-flash",      // Stable Workhorse
     "gemini-2.0-flash-lite", 
-    "gemini-2.0-flash",
-    "gemini-1.5-flash-001",  // Corrected name (was getting 404)
-    "gemini-1.5-pro-latest"  // Last resort high-quality
+    "gemini-1.5-pro"         // High Quality Backup
 ];
 
 // Helper to wait
