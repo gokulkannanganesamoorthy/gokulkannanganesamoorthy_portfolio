@@ -55,7 +55,7 @@ export const genzData = {
             "title": "Lead Scraper",
             "description": "A fast, smart scraper built for digital marketing — finds public client leads in a specific niche (phone, address, email), cleans the data, and exports ready-to-use CSVs.",
             "imageSrc": "/scrapper.png",
-            "url": "http://scrapper-fend.netlify.app"
+            "url": "https://scrapper-fend.netlify.app"
           }
     ],
     "services": [
@@ -220,7 +220,7 @@ export const professionalData = {
         "title": "Lead Scraper",
         "description": "Built an automated lead generation tool that scrapes and cleans marketing data (email, phone, address) from public sources, delivering organized, exportable datasets for targeted campaigns.",
         "imageSrc": "/scrapper.png",
-        "url": "http://scrapper-fend.netlify.app"
+        "url": "https://scrapper-fend.netlify.app"
       }
     ],
     "services": [
