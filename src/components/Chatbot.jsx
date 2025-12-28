@@ -509,9 +509,18 @@ const Chatbot = () => {
         }
 
         /* Fix cursor visibility on chatbot */
-        .chatbot-window * {
+        .chatbot-window, .chatbot-window *, .chatbot-button, .chatbot-button * {
           cursor: auto !important;
         }
+        
+        button.chatbot-button, .chatbot-button *, .submit-btn {
+            cursor: pointer !important;
+        }
+
+        .chatbot-messages, .chatbot-messages *, input, textarea {
+            cursor: text !important;
+        }
+
 
         @media (max-width: 640px) {
           .chatbot-window {

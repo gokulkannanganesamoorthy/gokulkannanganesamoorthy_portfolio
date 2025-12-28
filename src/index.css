@@ -109,8 +109,12 @@ html::-webkit-scrollbar, body::-webkit-scrollbar, .app::-webkit-scrollbar, *::-w
   background: transparent !important;
 }
 
-a, button, [role="button"] {
-  cursor: none; /* Ensure interactive elements don't show cursor */
+*, a, button, [role="button"] {
+  cursor: none !important; /* Ensure interactive elements don't show cursor */
+}
+
+* :hover {
+  cursor: none !important; /* Ensure interactive elements don't show cursor */
 }
 
 ul {

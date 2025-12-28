@@ -266,12 +266,32 @@ const CustomCursor = () => {
   }, [isHovering]);
 
 
+    const [hideCursor, setHideCursor] = useState(false);
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            // Check if the current mouse target or any of its parents is the chatbot
+            // This is a backup for browsers without CSS :has support
+            const target = e.target;
+            const isInChatbot = target?.closest?.('.chatbot-window') || target?.closest?.('.chatbot-button');
+            setHideCursor(!!isInChatbot);
+        };
+
+        window.addEventListener('mousemove', handleMouseMove, { passive: true });
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
   return (
     <>
       <canvas 
         ref={canvasRef}
+        id="cursor-canvas"
         className="fixed inset-0 pointer-events-none z-[9990]"
-        // style={{ mixBlendMode: 'difference' }} 
+        style={{ 
+            opacity: hideCursor ? 0 : 1, 
+            visibility: hideCursor ? 'hidden' : 'visible',
+            transition: 'opacity 0.2s ease, visibility 0.2s' 
+        }}
       />
       
       {/* Hidden standard dot */}
@@ -291,7 +311,7 @@ const CustomCursor = () => {
           transform: 'translate(-50%, -50%)',
           willChange: 'transform, width, height',
           mixBlendMode: 'difference',
-          display: 'flex',
+          display: hideCursor ? 'none' : 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           filter: 'drop-shadow(0 0 3px rgba(0,0,0,0.8))' // Add shadow for visibility on light backgrounds
