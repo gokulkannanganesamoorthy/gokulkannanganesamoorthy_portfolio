@@ -102,7 +102,7 @@ npm run build
 
 ⸻
 
-📁 PROJECT PHILOSOPHY
+## 📁 PROJECT PHILOSOPHY
 
 This project prioritizes:
     •	Formula 1 
@@ -117,23 +117,24 @@ it’s meant to feel alive.
 
 ⸻
 
-🔗 LINKS
-	•	Portfolio: https://gokulkannanganesamoorthy.vercel.app/
-	•	GitHub: https://github.com/gokulkannanganesamoorthy
-	•	LinkedIn: https://www.linkedin.com/in/gokulkannanganesamoorthy/
-	•	ORCID: https://orcid.org/0009-0004-5703-863X
-	•	Linktree: https://linktr.ee/gokulkannanganesamoorthy
+## 🔗 LINKS
+
+- **Portfolio** — [gokulkannanganesamoorthy.vercel.app](https://gokulkannanganesamoorthy.vercel.app/)
+- **GitHub** — [github.com/gokulkannanganesamoorthy](https://github.com/gokulkannanganesamoorthy)
+- **LinkedIn** — [linkedin.com/in/gokulkannanganesamoorthy](https://www.linkedin.com/in/gokulkannanganesamoorthy/)
+- **ORCID** — [orcid.org/0009-0004-5703-863X](https://orcid.org/0009-0004-5703-863X)
+- **Linktree** — [linktr.ee/gokulkannanganesamoorthy](https://linktr.ee/gokulkannanganesamoorthy)
 
 ⸻
 
-📌 STATUS
+## 📌 STATUS
 
 This is an actively evolving project.
 New experiments, refinements, and interaction ideas are added continuously.
 
 ⸻
 
-🖤 AUTHOR
+## 🖤 AUTHOR
 
 GOKUL KANNAN GANESAMOORTHY
 Web Designer · Developer · Creative Technologist
