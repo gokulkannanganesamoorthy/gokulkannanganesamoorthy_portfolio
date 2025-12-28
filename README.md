@@ -138,6 +138,7 @@ New experiments, refinements, and interaction ideas are added continuously.
 ## AUTHOR
 
 GOKUL KANNAN GANESAMOORTHY (https://gokulkannanganesamoorthy.vercel.app/)
+
 Web Designer · Developer · Creative Technologist
 
 Built like a machine.
