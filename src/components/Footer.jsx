@@ -92,8 +92,16 @@ const Footer = () => {
         zIndex: 2,
         color: '#fff'
       }}>
-        <h2 ref={nameRef} style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 600, marginBottom: '2rem' }}>
-          {scrambledName}
+        <h2 ref={nameRef} style={{ 
+          fontSize: 'clamp(2rem, 8vw, 6rem)', 
+          fontWeight: 600, 
+          marginBottom: '2rem',
+          width: '100%',
+          padding: '0 1rem',
+          wordBreak: 'break-word'
+        }}>
+           <span className="sr-only">{professionalData.name}</span>
+           <span aria-hidden="true">{scrambledName}</span>
         </h2>
         
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '4rem', flexWrap: 'wrap' }}>

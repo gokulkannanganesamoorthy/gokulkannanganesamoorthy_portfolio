@@ -144,9 +144,12 @@ const Hero = () => {
           flexDirection: 'column', // Stacks them
           alignItems: 'center'
         }}>
-          {/* We must attach refs to the elements wrapping the text for useScrambleText to attach Trigger */}
-          <span ref={ref1}>{text1}</span>
-          <span ref={ref2}>{text2}</span>
+          {/* Static H1 for SEO */}
+          <span className="sr-only">{professionalData.name}</span>
+          
+          {/* Visual Scramble Effect (Hidden from Screen Readers to avoid double read) */}
+          <span aria-hidden="true" ref={ref1}>{text1}</span>
+          <span aria-hidden="true" ref={ref2}>{text2}</span>
         </h1>
         
         <p ref={subTextRef} style={{

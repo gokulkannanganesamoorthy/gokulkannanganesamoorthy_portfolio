@@ -139,9 +139,22 @@ const Work = () => {
                   left: 0,
                   width: '100%',
                   height: '100%',
-                  background: 'linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 40%)',
                   zIndex: 2
-                }} />
+                }}>
+                   {/* SEO Image - Visually blended but present for crawlers */}
+                   <img 
+                      src={project.imageSrc} 
+                      alt={`${project.title} Preview`} 
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        opacity: 0.2, // Subtle background usage
+                        maskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)'
+                      }}
+                   />
+                </div>
               </div>
 
               <div style={{ marginTop: '2rem', textAlign: 'right', zIndex: 2, position: 'relative', transform: 'translateZ(30px)', padding: '2rem' }}>
