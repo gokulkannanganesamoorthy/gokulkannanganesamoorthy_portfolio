@@ -1,16 +1,137 @@
-# React + Vite
+# GOKUL KANNAN GANESAMOORTHY — PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Make it simple, but significant.
 
-Currently, two official plugins are available:
+This repository contains my **personal interactive portfolio**, built to move beyond static layouts and showcase work through **motion, sound, and engineered interactions**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Inspired by **Formula 1 mechanics**, this site treats scrolling, cursor movement, and transitions as a system — not UI afterthoughts.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ CONCEPT
 
-## Expanding the ESLint configuration
+The goal was clear:
+- No default scrolling
+- No passive UI
+- No lifeless sections
+- Formula 1
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Everything responds — like a machine in motion.
+
+From the intro loader to the footer, every interaction is intentional.
+
+---
+
+## 🏁 KEY HIGHLIGHTS
+
+### Intro Sequence
+- Custom loading screen (0 → 100%)
+- Name scrambling animation (A–Z, 0–9)
+- Glitch-style SFX on reveal
+- Ring-style sound toggle (on / off)
+
+### F1-Inspired Interaction System
+- Custom **F1 car cursor** with smoke trails
+- Scroll behaves like throttle control
+- **F1 tyre scroll indicator** reacting to direction
+- Motion-based *vroom* SFX synced with scroll & drag
+- Trails generated during scroll and drag interactions
+
+### Smooth Scrolling
+- Powered by **Lenis**
+- Replaces native browser scrolling
+- Inertia-based, controlled motion
+- Unified scroll + animation timing
+
+### Sections
+- Hero section with motion-first storytelling
+- Work section featuring selected projects
+- Holographic-style data panels (about)
+- Capabilities:
+  - Web Design & Development
+  - App Design & Development
+  - Automation Tools
+  - Cybersecurity
+- Experience timeline
+- Footer with identity and links
+
+### AI Integration
+- Minimal AI chatbot (bottom-left)
+- Powered by Gemini API
+- Answers questions about my work and experience
+
+---
+
+## 🛠️ TECH STACK
+
+- React.js
+- Lenis (smooth scrolling)
+- Custom cursor & scroll engine
+- Web Audio API (SFX)
+- CSS / Canvas-based effects
+- Gemini API (AI chatbot)
+
+---
+
+## 🚀 GETTING STARTED
+
+Clone the repository:
+
+```bash
+git clone https://github.com/gokulkannanganesamoorthy/gokulkannanganesamoorthy_portfolio.git
+
+Install dependencies:
+
+npm install
+
+Run locally:
+
+npm run dev
+
+Build for production:
+
+npm run build
+
+
+⸻
+
+📁 PROJECT PHILOSOPHY
+
+This project prioritizes:
+    •	Formula 1 
+	•	Interaction over decoration
+	•	Motion with purpose
+	•	Performance-first animations
+	•	Sound as feedback, not noise
+	•	An engineering mindset in UI
+
+It’s not meant to be loud —
+it’s meant to feel alive.
+
+⸻
+
+🔗 LINKS
+	•	Portfolio: https://gokulkannanganesamoorthy.vercel.app/
+	•	GitHub: https://github.com/gokulkannanganesamoorthy
+	•	LinkedIn: https://www.linkedin.com/in/gokulkannanganesamoorthy/
+	•	ORCID: https://orcid.org/0009-0004-5703-863X
+	•	Linktree: https://linktr.ee/gokulkannanganesamoorthy
+
+⸻
+
+📌 STATUS
+
+This is an actively evolving project.
+New experiments, refinements, and interaction ideas are added continuously.
+
+⸻
+
+🖤 AUTHOR
+
+GOKUL KANNAN GANESAMOORTHY
+Web Designer · Developer · Creative Technologist
+
+Built like a machine.
+Driven like an F1 car.
+
+---
