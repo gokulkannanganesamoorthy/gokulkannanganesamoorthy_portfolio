@@ -40,21 +40,18 @@ export const genzData = {
             "id": "1",
             "title": "VulnScan",
             "description": "Built a full-stack web penetration testing tool — 21 modules, AI-powered, PyPI published. Cyberpunk-ready, turning complex web vulnerabilities into actionable insights.",
-            "imageSrc": "/vulnscan.png",
             "url": "https://pypi.org/project/vulnscan/"
           },
           {
             "id": "2",
             "title": "Satta Pai Clothing",
             "description": "React-based fashion website with dynamic scrolling effects, interactive UI, and premium streetwear vibes. Designed for Gen-Z shoppers craving style and smooth experience.",
-            "imageSrc": "/satta_pai.png",
             "url": "https://gokulkannanganesamoorthy.github.io/satta_pai/"
           },
           {
             "id": "3",
             "title": "Lead Scraper",
             "description": "A fast, smart scraper built for digital marketing — finds public client leads in a specific niche (phone, address, email), cleans the data, and exports ready-to-use CSVs.",
-            "imageSrc": "/scrapper.png",
             "url": "https://scrapper-fend.netlify.app"
           }
     ],
@@ -205,21 +202,18 @@ export const professionalData = {
         "id": "1",
         "title": "VulnScan",
         "description": "Developed a comprehensive web penetration testing suite featuring 24 modules, AI-based vulnerability detection, and advanced reporting. Published as a PyPI package used by security professionals.",
-        "imageSrc": "/vulnscan.png",
         "url": "https://pypi.org/project/vulnscan/"
       },
       {
         "id": "2",
         "title": "Satta Pai Clothing",
         "description": "Designed and developed a React-based eCommerce website for a Gen-Z fashion brand, integrating smooth animations, interactive UI, and responsive layouts inspired by luxury fashion aesthetics.",
-        "imageSrc": "/satta_pai.png",
         "url": "https://satta-pai.vercel.app"
       },
       {
         "id": "3",
         "title": "Lead Scraper",
         "description": "Built an automated lead generation tool that scrapes and cleans marketing data (email, phone, address) from public sources, delivering organized, exportable datasets for targeted campaigns.",
-        "imageSrc": "/scrapper.png",
         "url": "https://scrapper-fend.netlify.app"
       }
     ],
