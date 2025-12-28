@@ -3,13 +3,19 @@ import { professionalData } from "../data";
 
 // Initialize Gemini
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-let model = null;
+let genAI = null;
 
 if (API_KEY && API_KEY !== 'YOUR_GEMINI_API_KEY_HERE') {
-    const genAI = new GoogleGenerativeAI(API_KEY);
-    // Use Gemini 1.5 Flash for speed and cost effectiveness
-    model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" }); 
+    genAI = new GoogleGenerativeAI(API_KEY);
 }
+
+// Fallback Chain (Priority: 2.5 Lite -> 2.0 Lite -> 2.0 Flash)
+const MODELS = [
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-lite", 
+    "gemini-2.0-flash",
+    "gemini-1.5-flash" // Final safety net
+];
 
 // Construct System Prompt from Data
 const constructSystemPrompt = () => {
@@ -48,42 +54,59 @@ const constructSystemPrompt = () => {
     `;
 };
 
+const getChatResponse = async (modelName, history, userMessage) => {
+    if (!genAI) throw new Error("API Key Missing");
+    
+    console.log(`[AI] Trying model: ${modelName}...`);
+    const model = genAI.getGenerativeModel({ model: modelName });
+
+    // Note: Gemini history format is { role: "user" | "model", parts: [{ text: "..." }] }
+    const chatHistory = history.map(msg => ({
+        role: msg.role === 'user' ? 'user' : 'model',
+        parts: [{ text: msg.content }]
+    }));
+
+    const chat = model.startChat({
+        history: [
+            {
+                role: "user",
+                parts: [{ text: constructSystemPrompt() }]
+            },
+            {
+                role: "model",
+                parts: [{ text: "Understood. I am ready to assist as Gokul's digital portfolio guide." }]
+            },
+            ...chatHistory
+        ],
+        generationConfig: {
+            maxOutputTokens: 200, 
+        },
+    });
+
+    const result = await chat.sendMessage(userMessage);
+    return result.response.text();
+};
+
 export const generateAIResponse = async (history, userMessage) => {
-    if (!model) {
-        console.warn("Gemini API Key missing or invalid.");
+    if (!genAI) {
+        console.warn("API Key missing or invalid. Please tell Gokul to check his settings! 🛠️");
         return "I'm currently offline (API Key missing). Please tell Gokul to check his settings! 🛠️";
     }
 
-    try {
-        // Create chat session with history
-        // Note: Gemini history format is { role: "user" | "model", parts: [{ text: "..." }] }
-        const chatHistory = history.map(msg => ({
-            role: msg.role === 'user' ? 'user' : 'model',
-            parts: [{ text: msg.content }]
-        }));
-
-        const chat = model.startChat({
-            history: [
-                {
-                    role: "user",
-                    parts: [{ text: constructSystemPrompt() }]
-                },
-                {
-                    role: "model",
-                    parts: [{ text: "Understood. I am ready to assist as Gokul's digital portfolio guide." }]
-                },
-                ...chatHistory
-            ],
-            generationConfig: {
-                maxOutputTokens: 200, // Keep responses concise
-            },
-        });
-
-        const result = await chat.sendMessage(userMessage);
-        return result.response.text();
-
-    } catch (error) {
-        console.error("Gemini API Error:", error);
-        return "Oops! My brain circuit jammed. 😵‍💫 (API Error). Try again?";
+    for (const modelName of MODELS) {
+        try {
+            return await getChatResponse(modelName, history, userMessage);
+        } catch (error) {
+            console.warn(`[AI] Failed with ${modelName}:`, error.message);
+            // If it's a 429 (Quota) or 503 (Service Unavailable), try next model
+            if (error.message.includes('429') || error.message.includes('503')) {
+                continue; 
+            }
+            // For other errors (e.g. prompt safety), break and return generic error
+            console.error("Non-retriable error:", error);
+            break;
+        }
     }
+
+    return "Oops! All my brain circuits are busy (Rate Limit). 😵‍💫 Try again in a minute?";
 };
