@@ -9,13 +9,17 @@ if (API_KEY && API_KEY !== 'YOUR_GEMINI_API_KEY_HERE') {
     genAI = new GoogleGenerativeAI(API_KEY);
 }
 
-// Fallback Chain (Priority: 2.5 Lite -> 2.0 Lite -> 2.0 Flash)
+// Fallback Chain (Priority: 2.5 Lite -> 2.0 Lite -> 2.0 Flash -> 1.5 Series)
 const MODELS = [
-    "gemini-2.5-flash-lite",
+    "gemini-2.5-flash-lite", // Primary
     "gemini-2.0-flash-lite", 
     "gemini-2.0-flash",
-    "gemini-1.5-flash" // Final safety net
+    "gemini-1.5-flash-001",  // Corrected name (was getting 404)
+    "gemini-1.5-pro-latest"  // Last resort high-quality
 ];
+
+// Helper to wait
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Construct System Prompt from Data
 const constructSystemPrompt = () => {
@@ -98,15 +102,23 @@ export const generateAIResponse = async (history, userMessage) => {
             return await getChatResponse(modelName, history, userMessage);
         } catch (error) {
             console.warn(`[AI] Failed with ${modelName}:`, error.message);
-            // If it's a 429 (Quota) or 503 (Service Unavailable), try next model
+            
+            // If it's a 429 (Quota) or 503 (Service Unavailable), try next model after a delay
             if (error.message.includes('429') || error.message.includes('503')) {
+                console.log(`[AI] Rate limited on ${modelName}. Waiting 2.5s before fallback...`);
+                await wait(2500); // Wait 2.5s to let quota cool down slightly
                 continue; 
             }
-            // For other errors (e.g. prompt safety), break and return generic error
+            // For other errors (e.g. prompt safety, not found), break or try next if it's a 404
+            if (error.message.includes('404')) {
+                console.log(`[AI] Model ${modelName} not found. Skipping...`);
+                continue;
+            }
+
             console.error("Non-retriable error:", error);
             break;
         }
     }
 
-    return "Oops! All my brain circuits are busy (Rate Limit). 😵‍💫 Try again in a minute?";
+    return "Oops! All my brain circuits are busy right now. 😵‍💫\n\nPlease **fill out the contact form** below or **email me directly** — I'll get back to you ASAP!";
 };

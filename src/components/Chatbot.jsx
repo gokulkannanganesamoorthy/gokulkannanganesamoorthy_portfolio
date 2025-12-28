@@ -90,6 +90,14 @@ const Chatbot = () => {
         const historyForAi = messages.slice(1); 
         const response = await generateAIResponse(historyForAi, userMessage);
         setMessages(prev => [...prev, { role: 'assistant', content: response }]);
+
+        // Auto-trigger Contact Mode if AI suggests it (e.g. Rate Limit Error)
+        if (response.includes("fill out the contact form")) {
+            setTimeout(() => {
+                setMessages(prev => [...prev, { role: 'assistant', content: "Let me open that for you. 📝\n**What's your name?**" }]);
+                setContactMode('name');
+            }, 2000);
+        }
     } catch (error) {
         setMessages(prev => [...prev, { role: 'assistant', content: "My connection dropped. 📡 Try again?" }]);
     } finally {
