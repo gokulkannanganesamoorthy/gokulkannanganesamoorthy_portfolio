@@ -124,6 +124,7 @@ it’s meant to feel alive.
 - **LinkedIn** — [linkedin.com/in/gokulkannanganesamoorthy](https://www.linkedin.com/in/gokulkannanganesamoorthy/)
 - **ORCID** — [orcid.org/0009-0004-5703-863X](https://orcid.org/0009-0004-5703-863X)
 - **Linktree** — [linktr.ee/gokulkannanganesamoorthy](https://linktr.ee/gokulkannanganesamoorthy)
+- **Email** — [gokulkannan.dev@gmail.com](mailto:gokulkannan.dev@gmail.com)
 
 ⸻
 
@@ -134,9 +135,9 @@ New experiments, refinements, and interaction ideas are added continuously.
 
 ⸻
 
-## 🖤 AUTHOR
+## AUTHOR
 
-GOKUL KANNAN GANESAMOORTHY
+GOKUL KANNAN GANESAMOORTHY (https://gokulkannanganesamoorthy.vercel.app/)
 Web Designer · Developer · Creative Technologist
 
 Built like a machine.
