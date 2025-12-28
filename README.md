@@ -137,7 +137,7 @@ New experiments, refinements, and interaction ideas are added continuously.
 
 ## AUTHOR
 
-GOKUL KANNAN GANESAMOORTHY (https://gokulkannanganesamoorthy.vercel.app/)
+[GOKUL KANNAN GANESAMOORTHY](https://gokulkannanganesamoorthy.vercel.app/)
 <br>
 Web Designer · Developer · Creative Technologist
 
