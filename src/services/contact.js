@@ -6,11 +6,7 @@ export const submitContactForm = async (data) => {
         return { success: false, message: "Missing API Key. Please add VITE_WEB3FORMS_ACCESS_KEY to .env" };
     }
 
-    // Debug Log
-    console.log("Contact Service: Submitting form...", { 
-        hasKey: !!ACCESS_KEY, 
-        keyLength: ACCESS_KEY?.length 
-    });
+
 
     try {
         const response = await fetch("https://api.web3forms.com/submit", {

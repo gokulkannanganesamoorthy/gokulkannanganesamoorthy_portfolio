@@ -11,8 +11,6 @@ if (API_KEY && API_KEY !== 'YOUR_GEMINI_API_KEY_HERE') {
 
 // Fallback Chain (Priority: 2.5 Flash -> 2.5 Lite -> 1.5 Flash -> Others)
 const MODELS = [
-    "gemini-3-flash",
-    "gemini-2.5-flash-tts",
     "gemini-2.5-flash",      // Requested New Model
     "gemini-2.5-flash-lite", // Efficient
     "gemini-1.5-flash",      // Stable Workhorse
@@ -63,7 +61,6 @@ const constructSystemPrompt = () => {
 const getChatResponse = async (modelName, history, userMessage) => {
     if (!genAI) throw new Error("API Key Missing");
     
-    console.log(`[AI] Trying model: ${modelName}...`);
     const model = genAI.getGenerativeModel({ model: modelName });
 
     // Note: Gemini history format is { role: "user" | "model", parts: [{ text: "..." }] }
@@ -107,13 +104,11 @@ export const generateAIResponse = async (history, userMessage) => {
             
             // If it's a 429 (Quota) or 503 (Service Unavailable), try next model after a delay
             if (error.message.includes('429') || error.message.includes('503')) {
-                console.log(`[AI] Rate limited on ${modelName}. Waiting 2.5s before fallback...`);
                 await wait(2500); // Wait 2.5s to let quota cool down slightly
                 continue; 
             }
             // For other errors (e.g. prompt safety, not found), break or try next if it's a 404
             if (error.message.includes('404')) {
-                console.log(`[AI] Model ${modelName} not found. Skipping...`);
                 continue;
             }
 
