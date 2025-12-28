@@ -141,7 +141,7 @@ const Work = () => {
                   height: '100%',
                   zIndex: 2
                 }}>
-                   {/* SEO Image - Visually blended but present for crawlers */}
+                  {/* SEO Image - Visually blended but present for crawlers 
                    <img 
                       src={project.imageSrc} 
                       alt={`${project.title} Preview`} 
@@ -154,6 +154,7 @@ const Work = () => {
                         WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)'
                       }}
                    />
+                        */}
                 </div>
               </div>
 
