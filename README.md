@@ -79,18 +79,25 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/gokulkannanganesamoorthy/gokulkannanganesamoorthy_portfolio.git
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Run locally:
 
+```bash
 npm run dev
+```
 
 Build for production:
 
+```bash
 npm run build
+```
 
 
 ⸻
