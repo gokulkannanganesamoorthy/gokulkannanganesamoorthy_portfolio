@@ -86,11 +86,11 @@ const Footer = () => {
         zIndex: 1
       }} />
 
-      <div ref={contentRef} className="container" style={{ 
-        textAlign: 'center', 
-        position: 'relative', 
+      <div ref={contentRef} className="container footer-content-center" style={{
+        textAlign: 'center',
+        position: 'relative',
         zIndex: 2,
-        color: '#fff' // White text on black portal
+        color: '#fff'
       }}>
         <h2 ref={nameRef} style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 600, marginBottom: '2rem' }}>
           {scrambledName}
@@ -110,9 +110,12 @@ const Footer = () => {
             ))}
         </div>
 
-        <p style={{ fontSize: '0.8rem', color: '#888' }}>
-          Copyright © {new Date().getFullYear()} {professionalData.name}. All rights reserved.
-        </p>
+        <p className="footer-copyright-mobile" style={{ fontSize: '0.8rem', color: '#888' }}>
+  <span>
+    Copyright © {new Date().getFullYear()} {professionalData.name}.
+  </span>
+  <span className="only-mobile-break"> All rights reserved.</span>
+</p>
       </div>
     </footer>
   );
