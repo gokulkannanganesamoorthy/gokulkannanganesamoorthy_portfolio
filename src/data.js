@@ -33,7 +33,12 @@ export const genzData = {
             "id": "5",
             "title": "Email",
             "link": "mailto:gokulkannan.dev@gmail.com"
-        }
+        },
+        {
+          "id": "6",
+          "title": "Meeting",
+          "link": "https://cal.com/gokul-kannan-ganesamoorthy-eukws2/"
+        },
     ],
     "projects": [
         {
@@ -195,7 +200,12 @@ export const professionalData = {
         "id": "5",
         "title": "Email",
         "link": "mailto:gokulkannan.dev@gmail.com"
-      }
+      },
+      {
+        "id": "6",
+        "title": "Meeting",
+        "link": "https://cal.com/gokul-kannan-ganesamoorthy-eukws2/"
+      },
     ],
     "projects": [
       {
