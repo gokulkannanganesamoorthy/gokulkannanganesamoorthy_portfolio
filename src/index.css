@@ -201,10 +201,29 @@ html.lenis, html.lenis body {
   font-weight: 800;
 }
 
+[data-theme='dark'] .apple-link {
+  color: #ffffff;
+}
+
 ::selection {
   background: #b3d7ff;
   color: #000;
 }
+
+/* About Section Card Style */
+.about-card {
+  background: var(--color-card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-top: 1px solid var(--glass-highlight);
+  padding: 2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

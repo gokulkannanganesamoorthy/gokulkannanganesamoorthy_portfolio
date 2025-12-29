@@ -80,13 +80,7 @@ const About = () => {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6rem', position: 'relative', zIndex: 10 }}>
           {/* About Text */}
-          <div ref={addToRefs} style={{ 
-            background: 'rgba(255,255,255,0.8)', 
-            backdropFilter: 'blur(20px)', 
-            padding: '2rem', 
-            borderRadius: '20px',
-            border: '1px solid rgba(0,0,0,0.05)'
-          }}>
+          <div ref={addToRefs} className="about-card">
             <h3 ref={overviewRef} style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-black)' }}>{overviewText}</h3>
             <p style={{ fontSize: '1.8rem', lineHeight: 1.4, fontWeight: 500 }}>
               {professionalData.aboutpara}
@@ -94,13 +88,7 @@ const About = () => {
           </div>
 
           {/* Services as Specs */}
-          <div ref={addToRefs} style={{ 
-            background: 'rgba(255,255,255,0.8)', 
-            backdropFilter: 'blur(20px)', 
-            padding: '2rem', 
-            borderRadius: '20px',
-            border: '1px solid rgba(0,0,0,0.05)'
-          }}>
+          <div ref={addToRefs} className="about-card">
             <h3 ref={capabilitiesRef} style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--color-black)' }}>{capabilitiesText}</h3>
             <div style={{ display: 'grid', gap: '2rem' }}>
               {professionalData.services.map((service) => (
@@ -119,13 +107,7 @@ const About = () => {
           </div>
           
           {/* Resume / Experience */}
-           <div ref={addToRefs} style={{ 
-            background: 'rgba(255,255,255,0.8)', 
-            backdropFilter: 'blur(20px)', 
-            padding: '2rem', 
-            borderRadius: '20px',
-            border: '1px solid rgba(0,0,0,0.05)'
-          }}>
+           <div ref={addToRefs} className="about-card">
             <h3 ref={experienceRef} style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--color-black)' }}>{experienceText}</h3>
             <div style={{ display: 'grid', gap: '2rem' }}>
               {professionalData.resume.experiences.map((exp) => (

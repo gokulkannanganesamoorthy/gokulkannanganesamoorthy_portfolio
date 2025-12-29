@@ -559,7 +559,7 @@ const Chatbot = () => {
             font-size: 0.9rem;
             font-weight: 500;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            border: 1px solid #000;
+            border: 1px solid var(--color-text);
             z-index: 9998;
             white-space: nowrap;
             animation: float 3s ease-in-out infinite;
@@ -568,6 +568,7 @@ const Chatbot = () => {
             justify-content: center;
         }
 
+
         .chatbot-arrow {
             position: absolute;
             bottom: -6px;
@@ -575,8 +576,8 @@ const Chatbot = () => {
             width: 12px;
             height: 12px;
             background: var(--color-bg);
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
+            border-right: 1px solid var(--color-text);
+            border-bottom: 1px solid var(--color-text);
             transform: rotate(45deg);
         }
       `}</style>
