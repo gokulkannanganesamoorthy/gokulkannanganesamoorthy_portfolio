@@ -28,6 +28,8 @@
   --radius-lg: 30px;
   --radius-md: 20px;
   --color-text-gradient: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
+  --footer-bg: #ffffff;
+  --footer-text: #000000;
   
   /* ... existing shadcn vars ... */
   --radius: 0.625rem;
@@ -73,6 +75,8 @@
   --glass-highlight: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   --color-text-gradient: linear-gradient(180deg, #ffffff 0%, #a1a1a6 100%);
+  --footer-bg: #000000;
+  --footer-text: #ffffff;
 }
 
 .glass-panel {
@@ -194,11 +198,14 @@ html.lenis, html.lenis body {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  text-decoration: none !important;
+  border-bottom: none !important; /* Ensure no border simulates underline */
 }
 
-.apple-link:hover {
-  text-decoration: underline;
+.apple-link:hover, a.apple-link:hover, button.apple-link:hover {
+  text-decoration: none !important;
   font-weight: 800;
+  border-bottom: none !important;
 }
 
 [data-theme='dark'] .apple-link {

@@ -98,17 +98,18 @@ const Hero = () => {
 
   return (
     <section ref={containerRef} style={{
-      height: '100vh',
+      height: '100dvh', // Use dvh for better mobile support
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      backgroundColor: 'transparent', // Transparent to see behind if needed, but usually covered by white
+      backgroundColor: 'transparent', 
       position: 'relative',
       overflow: 'hidden',
       zIndex: 10,
+      willChange: 'transform', // Hint browser to optimize compositing
       // We use a white background on a pseudo-element or inner div to fade it out
     }}>
       {/* Background layer that fades out */}

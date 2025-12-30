@@ -76,11 +76,11 @@ function App() {
         <section id="hero">
           <Hero />
         </section>
-        <section id="work">
-          <Work />
-        </section>
         <section id="about">
           <About />
+        </section>
+        <section id="work">
+          <Work />
         </section>
       </main>
 
