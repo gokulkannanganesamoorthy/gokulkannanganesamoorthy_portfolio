@@ -89,18 +89,6 @@ export const genzData = {
     "experiences": [
         {
             "id": "1",
-            "dates": "Feb 2025 - Present",
-            "type": "Founder / CEO",
-            "position": "Luno Tech - MY STARTUP",
-            "bullets": [
-                "Started a digital playground for web, apps, branding & SEO.",
-                " Delivered websites and apps that make eyeballs pop.",
-                " Juggled clients, projects, and caffeine like a pro.",
-                " Basically making the internet look cooler, one pixel at a time."
-            ]
-        },
-        {
-            "id": "2",
             "dates": "August 2025 - Present",
             "type": "Freelance",
             "position": "Web Wizard - ORRAYSON STUDIO",
@@ -108,6 +96,18 @@ export const genzData = {
                 "Turned client ideas into digital flex.",
                 " Built slick interfaces that scream 'premium'.",
                 " Optimized stuff so smooth even butter's jealous."
+            ]
+        },
+        {
+            "id": "2",
+            "dates": "Feb 2025 - Dec 2025",
+            "type": "Founder / CEO",
+            "position": "Luno Tech - MY STARTUP",
+            "bullets": [
+                "Started a digital playground for web, apps, branding & SEO.",
+                " Delivered websites and apps that make eyeballs pop.",
+                " Juggled clients, projects, and caffeine like a pro.",
+                " Basically making the internet look cooler, one pixel at a time."
             ]
         },
         {
@@ -256,18 +256,6 @@ export const professionalData = {
       "experiences": [
         {
           "id": "1",
-          "dates": "Feb 2025 - Present",
-          "type": "Founder / CEO",
-          "position": "Luno Tech - Digital Agency",
-          "bullets": [
-            "Founded a digital solutions company offering web, app, SEO, and branding services.",
-            "Led multiple end-to-end client projects, focusing on quality design and performance.",
-            "Built and managed a small team of designers and developers.",
-            "Focused on client satisfaction through innovation, scalability, and design consistency."
-          ]
-        },
-        {
-          "id": "2",
           "dates": "Aug 2025 - Present",
           "type": "Freelance",
           "position": "Freelance Web Developer - Orrayson Studio",
@@ -275,6 +263,18 @@ export const professionalData = {
             "Delivered responsive, visually appealing websites tailored to brand identity.",
             "Collaborated with clients to translate business goals into functional web solutions.",
             "Optimized website performance and accessibility for a premium user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "dates": "Feb 2025 - Dec 2025",
+          "type": "Founder / CEO",
+          "position": "Luno Tech - Digital Agency",
+          "bullets": [
+            "Founded a digital solutions company offering web, app, SEO, and branding services.",
+            "Led multiple end-to-end client projects, focusing on quality design and performance.",
+            "Built and managed a small team of designers and developers.",
+            "Focused on client satisfaction through innovation, scalability, and design consistency."
           ]
         },
         {
