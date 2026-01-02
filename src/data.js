@@ -44,7 +44,7 @@ export const genzData = {
         {
             "id": "1",
             "title": "VulnScan",
-            "description": "Built a full-stack web penetration testing tool — 21 modules, AI-powered, PyPI published. Cyberpunk-ready, turning complex web vulnerabilities into actionable insights.",
+            "description": "Built a full-stack web penetration testing tool - 21 modules, AI-powered, PyPI published. Cyberpunk-ready, turning complex web vulnerabilities into actionable insights.",
             "url": "https://pypi.org/project/vulnscan/"
           },
           {
@@ -56,7 +56,7 @@ export const genzData = {
           {
             "id": "3",
             "title": "Lead Scraper",
-            "description": "A fast, smart scraper built for digital marketing — finds public client leads in a specific niche (phone, address, email), cleans the data, and exports ready-to-use CSVs.",
+            "description": "A fast, smart scraper built for digital marketing - finds public client leads in a specific niche (phone, address, email), cleans the data, and exports ready-to-use CSVs.",
             "url": "https://scrapper-fend.netlify.app"
           }
     ],
@@ -74,7 +74,7 @@ export const genzData = {
     {
         "id": "3",
         "title": "Automation Tools",
-        "description": "I craft smart tools that do the boring stuff for you — fast, clean, and quietly genius behind the scenes."
+        "description": "I craft smart tools that do the boring stuff for you - fast, clean, and quietly genius behind the scenes."
     },
     {
         "id": "4",
@@ -82,16 +82,16 @@ export const genzData = {
         "description": "I break stuff (ethically) to make it unbreakable. Keeping your digital world locked, smooth, and hacker-proof."
     }
 ],
-    "aboutpara": "The guy who makes pixels behave. I design stuff that looks straight outta Vogue, code like I've had three coffees, and secure it like Fort Knox.Whether I'm crafting drippy, Gucci-coded designs or tearing into vulnerabilities like it's sport (ethically, duh) — I'm here for that chaotic harmony of creativity and logic. My goal? To make your screen say “damn.” Whether I'm building sleek websites or outsmarting bugs, I keep it stylish, safe, and a little dramatic — just how the web should be.",
+    "aboutpara": "The guy who makes pixels behave. I design stuff that looks straight outta Vogue, code like I've had three coffees, and secure it like Fort Knox.Whether I'm crafting drippy, Gucci-coded designs or tearing into vulnerabilities like it's sport (ethically, duh) - I'm here for that chaotic harmony of creativity and logic. My goal? To make your screen say “damn.” Whether I'm building sleek websites or outsmarting bugs, I keep it stylish, safe, and a little dramatic - just how the web should be.",
     "resume": {
-    "tagline": "Yo! I'm Gokul — I make pixels drip and code vibe.",
+    "tagline": "Yo! I'm Gokul - I make pixels drip and code vibe.",
     "description": "Turning web apps, AI experiments, and cyber stuff into experiences that slap. Expert in React, JavaScript, modern frameworks, and ethical hacking. Basically, I make the internet look fancy while keeping it safe.",
     "experiences": [
         {
             "id": "1",
             "dates": "Feb 2025 - Present",
             "type": "Founder / CEO",
-            "position": "Luno Tech — MY STARTUP",
+            "position": "Luno Tech - MY STARTUP",
             "bullets": [
                 "Started a digital playground for web, apps, branding & SEO.",
                 " Delivered websites and apps that make eyeballs pop.",
@@ -103,7 +103,7 @@ export const genzData = {
             "id": "2",
             "dates": "August 2025 - Present",
             "type": "Freelance",
-            "position": "Web Wizard — ORRAYSON STUDIO",
+            "position": "Web Wizard - ORRAYSON STUDIO",
             "bullets": [
                 "Turned client ideas into digital flex.",
                 " Built slick interfaces that scream 'premium'.",
@@ -125,7 +125,7 @@ export const genzData = {
             "id": "4",
             "dates": "May 2022 - Jun 2022",
             "type": "Internship",
-            "position": "Ethical Hacking Engineer — HackUp Technologies",
+            "position": "Ethical Hacking Engineer - HackUp Technologies",
             "bullets": [
                 "Performed vulnerability assessments and web app pentests. ",
                 "Reported issues with clear remediation steps to dev teams. ",
@@ -249,7 +249,7 @@ export const professionalData = {
         "description": "Specialized in ethical hacking and vulnerability assessment to identify, analyze, and secure digital infrastructures against cyber threats."
       }
     ],
-    "aboutpara": "I'm a passionate designer and developer who blends creativity with technical precision. My work bridges the gap between design and security — ensuring every project is not only visually compelling but also functionally secure. Whether it's crafting elegant web interfaces or engineering cybersecurity tools, I focus on delivering solutions that are efficient, innovative, rapid and built to last 😉.",
+    "aboutpara": "I'm a passionate designer and developer who blends creativity with technical precision. My work bridges the gap between design and security - ensuring every project is not only visually compelling but also functionally secure. Whether it's crafting elegant web interfaces or engineering cybersecurity tools, I focus on delivering solutions that are efficient, innovative, rapid and built to last 😉.",
     "resume": {
       "tagline": "Building secure, high-performing digital experiences.",
       "description": "Web developer, designer, and cybersecurity enthusiast with expertise in modern frameworks and full-stack development. Skilled in transforming complex ideas into clean, functional solutions that engage users and elevate brands.",
@@ -258,7 +258,7 @@ export const professionalData = {
           "id": "1",
           "dates": "Feb 2025 - Present",
           "type": "Founder / CEO",
-          "position": "Luno Tech — Digital Agency",
+          "position": "Luno Tech - Digital Agency",
           "bullets": [
             "Founded a digital solutions company offering web, app, SEO, and branding services.",
             "Led multiple end-to-end client projects, focusing on quality design and performance.",
@@ -270,7 +270,7 @@ export const professionalData = {
           "id": "2",
           "dates": "Aug 2025 - Present",
           "type": "Freelance",
-          "position": "Freelance Web Developer — Orrayson Studio",
+          "position": "Freelance Web Developer - Orrayson Studio",
           "bullets": [
             "Delivered responsive, visually appealing websites tailored to brand identity.",
             "Collaborated with clients to translate business goals into functional web solutions.",
@@ -281,7 +281,7 @@ export const professionalData = {
           "id": "3",
           "dates": "Jan 2025 - May 2025",
           "type": "Internship",
-          "position": "Gen AI Engineer Intern — AxTR Labs",
+          "position": "Gen AI Engineer Intern - AxTR Labs",
           "bullets": [
             "Worked on AI-driven applications enhancing automation and human interaction.",
             "Developed innovative AI tools that simplified business operations.",
@@ -292,7 +292,7 @@ export const professionalData = {
           "id": "4",
           "dates": "May 2022 - Jun 2022",
           "type": "Internship",
-          "position": "Ethical Hacking Intern — HackUp Technologies",
+          "position": "Ethical Hacking Intern - HackUp Technologies",
           "bullets": [
             "Conducted vulnerability assessments and penetration tests for web applications.",
             "Documented findings and provided remediation strategies to development teams.",
@@ -303,7 +303,7 @@ export const professionalData = {
       ],
       "education": {
         "universityName": "PSG College of Technology",
-        "universityDate": "2024-2027 (B.Tech — Information Technology)",
+        "universityDate": "2024-2027 (B.Tech - Information Technology)",
         "universityPara": "Focused on web development, AI, and cybersecurity. Engaged in academic and real-world projects exploring modern frameworks and ethical hacking practices.",
         "diploma": {
           "collegeName": "PSG Polytechnic College",
